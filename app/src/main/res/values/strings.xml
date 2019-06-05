@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Drivy</string>
+    <string name="loading_car_message">Loading cars in progress…</string>
+    <string name="error_loading_car_message">Error while loading cars, please try again</string>
+</resources>
