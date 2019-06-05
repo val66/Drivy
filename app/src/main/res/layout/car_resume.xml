@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/car_image"
+        android:id="@+id/car_resume" >
+
+    <TextView
+            android:layout_width="0dp"
+            app:layout_constraintHorizontal_weight="1"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/car_price"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Fiat Panda"
+            android:id="@+id/car_name" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/car_name"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:text="12€/j"
+            android:id="@+id/car_price"/>
+
+    <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            style="?android:attr/ratingBarStyleSmall"
+            app:layout_constraintTop_toBottomOf="@+id/car_name"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/car_rating"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="17dp"
+            app:layout_constraintTop_toBottomOf="@+id/car_name"
+            app:layout_constraintStart_toEndOf="@+id/car_rating"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:text="37"
+            android:id="@+id/car_rating_count" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,6 +1,7 @@
 package com.valentin.pinilla.drivy.model
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 
 data class Car(
@@ -10,4 +11,4 @@ data class Car(
 	@SerializedName("price_per_day") val pricePerDay: Int,
 	@SerializedName("rating") val rating: Rating,
 	@SerializedName("owner") val owner: Owner
-)
+) : Serializable
